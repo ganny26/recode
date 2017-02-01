@@ -2,8 +2,7 @@
 bin/
 bin-debug/
 bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
+node_modeules
 
 # Other files and folders
 .settings/
