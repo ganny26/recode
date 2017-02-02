@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Welcome to Firebase Hosting</title>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
-
     <link href="custom.css" rel="stylesheet">
-  </head>
-  <body>
-   
-    <nav>
-    <div class="nav-wrapper">
-      <a class="brand-logo">Firebase Fusion</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Guides</a></li>
-      </ul>
-    </div>
-  </nav>
-          <div class="card purple-card">
-            <div class="card-content white-text">
-              <span class="card-title">Built on firbase</span>
-              <p>Firebase helps you develop high-quality apps, grow your user base, and earn more money. Each feature works independently, and they work even better together.
-              </p>
-            </div>
-        
-      </div>
-      <div class="container">
-       <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Email" id="txtEmail" type="text" class="validate">
-        </div>
-        <div class="input-field col s6">
-          <input placeholder="Password" id="txtPassword" type="password" class="validate">
-        </div>
-        <div class="col s6">
-          <button type="button" id="btnLogin" class="btn btn-success">Login</button>
-          <button type="button" id="btnSignup" class="btn btn-success">Signup</button>
-          <button type="button" id="btnLogout" class="btn btn-success hide">Logout</button>
-        </div>
-       </div>
-      </div>
-  
-  </body>
+</head>
 
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo">Firebase Authentication</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Users</a></li>
+                <li><a href="#">OAuth</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="input-field col m12">
+                <input placeholder="Email" id="txtEmail" type="text" class="validate">
+            </div>
+            <div class="input-field col m12">
+                <input placeholder="Password" id="txtPassword" type="password" class="validate">
+            </div>
+            <div class="col s6">
+                <button type="button" id="btnLogin" class="btn btn-success">Login</button>
+                <button type="button" id="btnSignup" class="btn btn-success">Signup</button>
+                <button type="button" id="btnLogout" class="btn btn-success hide">Logout</button>
+            </div>
+        </div>
+    </div>
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
 <script src="app.js"></script>
+
 </html>
