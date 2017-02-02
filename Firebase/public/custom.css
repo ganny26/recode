@@ -1,0 +1,10 @@
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+.purple-card,nav{
+	background-color: purple !important;
+}
+
+nav{
+	padding-left: 20px;
+}
