@@ -1,0 +1,15 @@
+body{
+    background-color:deeppink;
+}
+.logIn{
+    padding: 20px;
+}
+.showMiddle{
+    text-align: center;
+}
+.maincontent{
+    margin-top:220px; 
+}
+#my-signin2{
+    text-align: center;
+}
