@@ -1,5 +1,12 @@
+
 <html>
 <body>
+
 <h2>Hello</h2>
+{#data}
+<p>{fname}</p><br/>
+<p>{lname}</p><br/>
+<p>{email}</p>
+{/data}
 </body>
 </html>

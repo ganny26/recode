@@ -1,0 +1,12 @@
+
+<html>
+<body>
+{#data}
+<ul>
+<li>{name}</li>
+<li>{username}</li>
+<li>{email}</li>
+</ul>
+{/data}
+</body>
+</html>

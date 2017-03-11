@@ -1,20 +1,22 @@
 {
   "name": "yarn-demo",
   "version": "1.0.0",
-  "description": "demo app for yarn",
   "main": "index.js",
-  "repository": "https://github.com/ganny26/yarn-demo.git",
-  "author": "selva",
+  "repository": {},
+  "author": "selvaganeshr <selvaganeshrajam@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel-cli": "^6.22.2",
-    "babel-preset-env": "^1.1.8",
-    "body-parser": "^1.16.0",
+    "body-parser": "^1.16.1",
+    "chai": "^3.5.0",
     "consolidate": "^0.14.5",
     "dustjs-helpers": "^1.7.3",
     "dustjs-linkedin": "^2.7.5",
     "express": "^4.14.1",
-    "express-session": "^1.15.0",
-    "nconf": "^0.8.4"
+    "express-session": "^1.15.1",
+    "mysql": "^2.13.0",
+    "nconf": "^0.8.4",
+    "request": "^2.79.0",
+    "uniq": "^1.0.1",
+    "unique": "^0.0.1"
   }
 }
