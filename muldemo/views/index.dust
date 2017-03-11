@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>upload</title>
+</head>
+<body>
+<form action="/profile" method="post" >
+	Profile<input type="file" name="avatar"><br/>
+	<input type="submit">
+</form>
+</body>
+</html>
