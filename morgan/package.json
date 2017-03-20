@@ -1,0 +1,12 @@
+{
+  "name": "prod-exp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.6.3",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1"
+  }
+}
