@@ -5,8 +5,10 @@ const bodyParser = require('body-parser');
 var passport = require('passport');
 var session  = require('express-session');
 var FacebookStrategy = require('passport-facebook').Strategy;
-var LocalStorage = require('node-localstorage').LocalStorage,
-localStorage = new LocalStorage('./scratch');
+
+var cookieParser = require('cookie-parser');
+
+
 var app = express();
 const PORT = 5000;
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -21,6 +23,7 @@ app.set('views', __dirname + '/views');
 //passport initialization
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(cookieParser());
 
 app.use(session({
   secret: 'oaodata'
@@ -51,8 +54,7 @@ passport.use(new FacebookStrategy({
 
 //index route
 app.get('/', function(req, res) {
-    req.session.destroy();
-    req.logout();
+    req.cookies.hello = 'hello';
     res.render('index');
 });
 
@@ -75,24 +77,23 @@ app.get('/details',function(req,res){
 
 app.get('/welcome',function(req,res){
     console.log('Data from session',req.session);
-    localStorage.setItem('myFirstKey', 'myFirstValue');
     var userdetails = req.session.fbdata;
+    res.header('id',userdetails.id );
+    res.header('fname',userdetails.firstName);
 	res.render('welcome',{data:userdetails});
 });
 
 app.get('/auth/facebook/callback',passport.authenticate('facebook', { failureRedirect: '/' }),
     function(req, res) {
-    
-        // Successful authentication, redirect home.
-       // console.log('Welcome cb',req.user._json);
         var fbUserData = {
             'id':req.user.id,
             'firstName':req.user._json.first_name,
             'lastName':req.user._json.last_name,
             'gender':req.user.gender
         };
-       
+        req.session.hello = 'hello';
         req.session.fbdata = fbUserData;
+        req.cookies.fbdata = fbUserData;
         res.redirect('/welcome');
     });
 
