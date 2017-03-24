@@ -1,0 +1,12 @@
+<p>Welcome</p>
+{#data}
+
+
+<p><input type="text" value={id}></p>
+<p><input type="text" value={firstName}></p>
+<p><input type="text" value={lastName}></p>
+<p><input type="text" value={gender}></p> 
+
+{/data}
+<a href="/logout">Logout</a><br/>
+<a href="/details">Details</a><br/>

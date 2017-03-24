@@ -1,0 +1,13 @@
+<p>Details</p>
+<br/>
+{#data}
+
+
+<p>{id}</p>
+<p>{firstName}</p>
+<p>{lastName}</p>
+<p>{gender}</p> 
+
+{/data}
+<br/>
+<a href="/logout">Logout</a><br/>
