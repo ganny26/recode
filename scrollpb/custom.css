@@ -1,0 +1,18 @@
+.KW_progressContainer {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 9000;
+}
+
+.KW_progressBar {
+    height: 100%;
+    width: 0;
+    background-color: orange;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
